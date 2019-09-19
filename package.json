@@ -44,12 +44,16 @@
     "test": "karma start --single-run --browsers ChromeHeadless tests/karma.conf.js",
     "test:debug": "karma start --single-run=false --browsers Chrome tests/karma.conf.js",
     "gulp": "gulp",
-    "lint": "standard --fix"
+    "lint": "standard --fix",
+    "start":"node server.js"
   },
   "standard": {
     "ignore": [
       "specs/lib",
       "specs/phantomjs-testrunner.js"
     ]
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
